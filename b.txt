@@ -1,3 +1,20 @@
 commit 1 
 commit 2 
 commit 3 
+
+- hash du commit 1 : 464d4e77772e9250d13e1c4c073efc1ddbf8bf22
+- infos avec git show : 
+commit 464d4e77772e9250d13e1c4c073efc1ddbf8bf22
+Author: SAAD AAQIL <s.aaqil@mundiapolis.ma>
+Date:   Fri Mar 27 23:24:16 2026 +0100
+
+    commit 1
+
+diff --git a/b.txt b/b.txt
+new file mode 100644
+index 0000000..75e567d
+--- /dev/null
++++ b/b.txt
+@@ -0,0 +1 @@
++commit 1 
+
