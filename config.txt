@@ -1,0 +1,4 @@
+commandes utilisee : 
+git config --global user.name "SAAD AAQIL" 
+git config --global user.email "s.aaqil@mundiapolis.ma"
+
