@@ -1,0 +1,2 @@
+- Restore changes made to files or directories
+- reset moves the HEAD to a specifique commit
