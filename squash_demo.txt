@@ -1,0 +1,3 @@
+Ligne 1 : initialisation du fichier
+Ligne 2 : ajout de contenu
+Ligne 3 : finalisation
