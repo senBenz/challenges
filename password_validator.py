@@ -6,7 +6,7 @@ def validate_password(password: str) -> dict:
     Valide un mot de passe selon des critères de sécurité.
 
     Critères :
-    - Longueur minimale de 8 caractères
+    - Longueur minimale de 8 caractères (espaces non comptés)
     - Au moins une lettre majuscule
     - Au moins une lettre minuscule
     - Au moins un chiffre
@@ -14,9 +14,12 @@ def validate_password(password: str) -> dict:
 
     Retourne un dict avec 'valid' (bool) et 'errors' (list).
     """
+    if not isinstance(password, str):
+        return {"valid": False, "errors": ["Le mot de passe doit être une chaîne de caractères."]}
+
     errors = []
 
-    if len(password) < 8:
+    if len(password.strip()) < 8:
         errors.append("Le mot de passe doit contenir au moins 8 caractères.")
 
     if not re.search(r"[A-Z]", password):
@@ -35,7 +38,7 @@ def validate_password(password: str) -> dict:
 
 
 if __name__ == "__main__":
-    tests = ["abc", "password", "Password1", "Password1!"]
+    tests = ["abc", "password", "Password1", "Password1!", "        ", None]
     for pwd in tests:
         result = validate_password(pwd)
         status = "OK" if result["valid"] else "INVALIDE"
