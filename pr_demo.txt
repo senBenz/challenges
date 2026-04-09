@@ -1,0 +1,7 @@
+Démonstration Pull Request.
+
+Ce fichier illustre le workflow complet :
+- création de branche
+- push
+- ouverture d'une PR avec description
+- merge
