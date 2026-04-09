@@ -1,0 +1,2 @@
+Ce fichier a été créé sur la branche A.
+Il sera cherry-pické sur la branche B.
